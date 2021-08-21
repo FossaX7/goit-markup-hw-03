@@ -6,8 +6,51 @@
   --secondary-text-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .link {
   text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .list {
@@ -19,10 +62,6 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
-}
-
-.logo-left {
   color: var(--accent-color);
 }
 
@@ -36,6 +75,41 @@ body {
 }
 /* ----------------HEADER------------- */
 
+.header {
+  border: 1px solid #ececec;
+}
+
+.logo-right-header {
+  color: #000000;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: 94px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+}
+
 .header-link,
 .header-tel,
 .header-mail {
@@ -46,14 +120,24 @@ body {
   color: #212121;
 }
 
+.header-link {
+  display: block;
+  padding: 32px 0;
+}
+
 .header-link:focus,
 .header-link:hover {
   color: var(--accent-color);
 }
 
+.header-mail {
+  margin-right: 50px;
+}
+
 .header-tel,
 .header-mail {
   color: var(--main-text-color);
+  padding: 32px 0;
 }
 
 .header-tel:hover,
@@ -66,31 +150,56 @@ body {
 
 /* ----------------HERO------------- */
 
+.hero {
+  background-color: #2f303a;
+}
+
+.hero > .container {
+  text-align: center;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: peru;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
 }
 
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
 }
 
 /* ----------------FEATURES------------- */
+
+.features > .container {
+  display: flex;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item:not(last-child) {
+  margin-right: 30px;
+}
 
 .features-item-title {
   font-weight: 700;
@@ -99,6 +208,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -108,6 +219,22 @@ body {
 }
 
 /* ----------------DIRECTIONS------------- */
+
+.directions {
+  padding-top: 0;
+}
+
+.directions-list {
+  display: flex;
+}
+
+.directions-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.directions-title {
+  margin-bottom: 50px;
+}
 
 .directions-title,
 .team-title {
@@ -121,6 +248,27 @@ body {
 
 /* ----------------TEAM------------- */
 
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.team-list > .team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.team-img-after {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-text,
 .team-item-title {
   font-weight: 500;
@@ -132,20 +280,45 @@ body {
 
 .team-item-title {
   color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 /* ----------------FOOTER------------- */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-right-footer {
+  color: #ffffff;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
 
 .footer-list {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: peru;
 }
 
 .footer-link-map {
   color: #ffffff;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-link-mail {
+  display: block;
+  margin-bottom: 9px;
 }
 
 .footer-link-mail,
