@@ -76,7 +76,7 @@ body {
 /* ----------------HEADER------------- */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header > .container {
@@ -152,12 +152,13 @@ body {
 
 .hero {
   background-color: #2f303a;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero > .container {
   text-align: center;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
 }
 
 .hero-title {
@@ -287,9 +288,7 @@ body {
 
 .footer {
   background-color: #2f303a;
-}
 
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
