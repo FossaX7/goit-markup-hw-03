@@ -25,6 +25,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -76,12 +77,12 @@ body {
 /* ----------------HEADER------------- */
 
 .header {
-  border-bottom: 1px solid #ececec;
 }
 
 .header > .container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-navigation {
@@ -376,15 +377,11 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+
+  border: 1px solid #eeeeee;
 }
 .portfolio-after-img {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 
 .portfolio-item-title {
